@@ -14,7 +14,9 @@ export const VerboseSwitch = (props: VerboseSwitchProps) => {
         {props.viewSetting.charAt(0).toUpperCase() +
           props.viewSetting.substring(1)}
       </FormLabel>
-      <Switch size="lg" onChange={props.onClick} />
+      <Box textAlign={["center", "left"]}>
+        <Switch size="lg" onChange={props.onClick} />
+      </Box>
     </Box>
   );
 };

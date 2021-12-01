@@ -7,14 +7,21 @@ import {
   Text,
   Link,
   VStack,
+  useColorModeValue,
+  HStack,
 } from "@chakra-ui/react";
+
+import { GrMail } from "react-icons/gr";
+import { IoMdDocument } from "react-icons/io";
 
 import { VerboseSwitch } from "./components/VerboseSwitch";
 import { VerboseText } from "./components/VerboseText";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 // TODO: color provider
 
 export const App = () => {
+  const color = useColorModeValue("blue.300", "#8FCDF4");
   const [viewSetting, changeViewSetting] = React.useState<
     "concise" | "verbose"
   >("concise");
@@ -32,13 +39,38 @@ export const App = () => {
         maxW="container.md"
         lineHeight="2"
       >
-        <Box textAlign="right" mr={3}>
-          <Heading as="h1" size="3xl">
-            niners!
-          </Heading>
-          <Text>student. educator. researcher. tinkerer.</Text>
+        <Box
+          display={"flex"}
+          flexDirection={["column", "row-reverse"]}
+          justifyContent={["center", "space-between"]}
+        >
+          <Box textAlign={["center", "right"]} mx={["auto", 3]}>
+            <Heading as="h1" size="3xl">
+              niners!
+            </Heading>
+            <Text>student, ta, researcher, and tinkerer!</Text>
+            <HStack justifyContent={["center", "flex-end"]}>
+              <Link href="mailto:acheung8@uw.edu">
+                <GrMail size={30} />
+              </Link>
+              <Link href="https://github.com/ninehusky">
+                <FaGithub size={30} />
+              </Link>
+              <Link href="https://www.linkedin.com/in/acheung88/">
+                <FaLinkedin size={30} />
+              </Link>
+              <Link href={`${process.env.PUBLIC_URL}/resume.pdf`}>
+                <IoMdDocument size={30} />
+              </Link>
+            </HStack>
+          </Box>
+          <Box mx={["auto", 3]}>
+            <VerboseSwitch
+              viewSetting={viewSetting}
+              onClick={handleViewChange}
+            />
+          </Box>
         </Box>
-        <VerboseSwitch viewSetting={viewSetting} onClick={handleViewChange} />
         <VStack
           mx={3}
           mt={"5vh"}
@@ -48,11 +80,12 @@ export const App = () => {
           alignItems="flex-start"
         >
           <Text>
-            hi! i'm niners, aka andrew, a fourth-year studying cs at uw seattle.
+            hi! i'm niners, aka andrew, a fourth-year studying computer science
+            at uw seattle.
           </Text>
           <Text>
             most people know me as the section lead ta for{" "}
-            <Link fontWeight="bold" href="https://cs.uw.edu/142">
+            <Link color={color} fontWeight="bold" href="https://cs.uw.edu/142">
               CSE 142
             </Link>
             , the introductory computer science class at uw.
@@ -65,48 +98,55 @@ export const App = () => {
           </VerboseText>
           <Text>
             last summer, i started working with a team of tas on the{" "}
-            <Link href="#" fontWeight="bold">
+            <Link color={color} href="#" fontWeight="bold">
               code quality checker
             </Link>
             , a static analysis tool that automates the grading of hundreds of
             student programs every week.
           </Text>
           <VerboseText viewSetting={viewSetting}>
-            teaching assistants for 142 spend a lot of time hand-grading student
-            submissions every week. the code quality checker's goal is to
-            alleviate the staff workload by automatically creating and parsing
-            the syntax tree corresponding to a student's submission, and
-            automatically posting feedback annotations/assignment scores
-            according to the assignment's criteria.
-          </VerboseText>
-          <VerboseText viewSetting={viewSetting}>
-            given the nature of the criteria covered in the project, the
-            repository is private, but i'm happy to answer any questions about
-            the project!
+            teaching assistants for 142 spend ~7 hours a week hand-grading
+            student submissions. the code quality checker's goal is to alleviate
+            staff workload by automatically creating and parsing the syntax tree
+            corresponding to a student's submission, before automatically
+            posting feedback annotations/assignment scores according to an
+            assignment's criteria.
           </VerboseText>
           <Text>
             i'm also involved with{" "}
-            <Link href="http://uwplse.org/" fontWeight="bold">
+            <Link color={color} href="http://uwplse.org/" fontWeight="bold">
               PLSE
             </Link>
-            , the programming language research lab at uw. i assist the team
-            working on the{" "}
-            <Link href="https://checkerframework.org/" fontWeight="bold">
-              checker framework
-            </Link>
-            , a plugin to the java compiler aimed at catching common runtime
-            errors in compilation.
+            , the programming language research lab at uw.
           </Text>
+          <Text>
+            i'm currently onboarding with the team working on{" "}
+            <Link
+              color={color}
+              href="https://github.com/gussmith23/glenside/"
+              fontWeight="bold"
+            >
+              glenside
+            </Link>
+            , a programming language designed to optimize performance with
+            machine learning.
+          </Text>
+          <VerboseText viewSetting={viewSetting}>
+            specifically, it's a low-level language implemented in rust whose
+            compiler is designed to perform low-level program rewrites, thereby
+            optimizing performance within the context of machine learning.
+          </VerboseText>
           <Text>
             outside of work and research, i love making apps to show my friends.
           </Text>
           <Text>
-            in particular, i made{" "}
-            <Link fontWeight="bold" href="https://ninepasta.me">
+            in particular, i created{" "}
+            <Link color={color} fontWeight="bold" href="https://ninepasta.me">
               ninepasta
             </Link>
             , a full-stack web app that helps users easily create{" "}
             <Link
+              color={color}
               fontWeight="bold"
               href="https://knowyourmeme.com/memes/emojipasta"
             >
@@ -127,26 +167,35 @@ export const App = () => {
           </Text>
 
           <Text>
-            in particular, i made{" "}
+            earlier this year, i made{" "}
             <Link
+              color={color}
               fontWeight="bold"
               href="https://github.com/ninehusky/ninechip"
             >
               ninechip
             </Link>
-            , an emulator for the CHIP-8 written in java.
+            , an emulator for the{" "}
+            <Link
+              color={color}
+              fontWeight="bold"
+              href="https://en.wikipedia.org/wiki/CHIP-8"
+            >
+              CHIP-8
+            </Link>{" "}
+            written in java.
           </Text>
           <VerboseText viewSetting={viewSetting}>
-            emulators are often described as problems that heavily test
-            low-level programming concepts. although this is certainly true,
-            making an emulator also tested my software engineering skills. the
-            nature of the program makes it so that low-level code is present
-            across the codebase, meaning that well-documented, modular code was
-            a necessity.
+            i wrote ninechip as a first step into the world of emulation.
+            ninechip fully emulates the hardware of the CHIP-8, i.e., the ram,
+            cpu, and keypad, and simulates i/o and display using the swing
+            library. it reads and executes any file written in CHIP-8 assembly
+            at 60 hz.
           </VerboseText>
           <Text>
             i'm also making{" "}
             <Link
+              color={color}
               fontWeight="bold"
               href="https://github.com/ninehusky/nine-eighty"
             >
@@ -154,6 +203,26 @@ export const App = () => {
             </Link>
             , a disassembler and interpreter for the intel 8080 assembly
             language.
+          </Text>
+          <VerboseText viewSetting={viewSetting}>
+            the 8080 is a pretty famous chip, having powered influential
+            machines such as the space invaders arcade cabinet. the level of
+            complexity of the 8080 is significantly higher than the CHIP-8,
+            meaning that more sophisticated unit tests are necessary to ensure
+            that my interpreter is working correctly.
+          </VerboseText>
+          <VerboseText viewSetting={viewSetting}>
+            given the age of the 8080, a lot of my time working on this project
+            is diving deep into the intel 8080 programmer's manual, a job that
+            is equally as frustrating as it is rewarding.
+          </VerboseText>
+          <Text>
+            i'm open to talk about just about anything, whether it relates to
+            computer science or not.{" "}
+            <Link color={color} href="mailto:acheung8@uw.edu" fontWeight="bold">
+              send me an email
+            </Link>
+            !
           </Text>
         </VStack>
       </Box>
