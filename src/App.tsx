@@ -68,7 +68,7 @@ export const App = () => {
               <Link href="https://www.linkedin.com/in/acheung88/">
                 <FaLinkedin size={30} />
               </Link>
-              <Link href={`${process.env.PUBLIC_URL}/resume.pdf`}>
+              <Link href={`http://niners.me/resume.pdf`}>
                 <IoMdDocument size={30} />
               </Link>
               <ColorModeSwitcher />
