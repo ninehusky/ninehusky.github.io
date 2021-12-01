@@ -9,6 +9,7 @@ import {
   VStack,
   useColorModeValue,
   HStack,
+  Container,
 } from "@chakra-ui/react";
 
 import { GrMail } from "react-icons/gr";
@@ -68,6 +69,7 @@ export const App = () => {
             <VerboseSwitch
               viewSetting={viewSetting}
               onClick={handleViewChange}
+              color={color}
             />
           </Box>
         </Box>
@@ -186,7 +188,7 @@ export const App = () => {
             written in java.
           </Text>
           <VerboseText viewSetting={viewSetting}>
-            i wrote ninechip as a first step into the world of emulation.
+            i wrote ninechip as a first step into the world of interpreters.
             ninechip fully emulates the hardware of the CHIP-8, i.e., the ram,
             cpu, and keypad, and simulates i/o and display using the swing
             library. it reads and executes any file written in CHIP-8 assembly
@@ -226,6 +228,22 @@ export const App = () => {
           </Text>
         </VStack>
       </Box>
+      <Container maxW="container.md">
+        <Text textAlign={["center", "right"]} fontSize="md">
+          favicon art by{" "}
+          <Link href="https://twemoji.twitter.com/" fontWeight="bold">
+            twemoji
+          </Link>
+          .
+        </Text>
+        <Text textAlign={["center", "right"]} fontSize="md" mb={4}>
+          proudly made using{" "}
+          <Link href="https://chakra-ui.com/" fontWeight="bold">
+            chakra-ui
+          </Link>
+          .
+        </Text>
+      </Container>
     </ChakraProvider>
   );
 };
