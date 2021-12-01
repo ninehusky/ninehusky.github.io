@@ -2,9 +2,10 @@ import * as React from "react";
 import {
   ChakraProvider,
   Box,
-  theme,
   Heading,
   Text,
+  extendTheme,
+  ThemeConfig,
   Link,
   VStack,
   useColorModeValue,
@@ -18,10 +19,17 @@ import { IoMdDocument } from "react-icons/io";
 import { VerboseSwitch } from "./components/VerboseSwitch";
 import { VerboseText } from "./components/VerboseText";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 // TODO: color provider
 
 export const App = () => {
+  const config: ThemeConfig = {
+    initialColorMode: "dark",
+  };
+
+  // 3. extend the theme
+  const theme = extendTheme({ config });
   const color = useColorModeValue("blue.300", "#8FCDF4");
   const [viewSetting, changeViewSetting] = React.useState<
     "concise" | "verbose"
@@ -63,6 +71,7 @@ export const App = () => {
               <Link href={`${process.env.PUBLIC_URL}/resume.pdf`}>
                 <IoMdDocument size={30} />
               </Link>
+              <ColorModeSwitcher />
             </HStack>
           </Box>
           <Box mx={["auto", 3]}>
