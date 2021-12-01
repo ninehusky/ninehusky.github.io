@@ -25,7 +25,13 @@ export const App = () => {
 
   return (
     <ChakraProvider theme={theme}>
-      <Box mt={["10vh", "10vh"]} mx={"auto"} maxW="container.md" lineHeight="2">
+      <Box
+        mt={["10vh", "10vh"]}
+        mx={"auto"}
+        mb={"10vh"}
+        maxW="container.md"
+        lineHeight="2"
+      >
         <Box textAlign="right" mr={3}>
           <Heading as="h1" size="3xl">
             niners!
@@ -35,7 +41,7 @@ export const App = () => {
         <VerboseSwitch viewSetting={viewSetting} onClick={handleViewChange} />
         <VStack
           mx={3}
-          mt={"10vh"}
+          mt={"5vh"}
           fontSize="lg"
           spacing={5}
           display="flex"
@@ -58,43 +64,68 @@ export const App = () => {
             presenting weekly debriefs to course staff!
           </VerboseText>
           <Text>
-            outside of my teaching job, i work on the{" "}
+            last summer, i started working with a team of tas on the{" "}
             <Link href="#" fontWeight="bold">
               code quality checker
             </Link>
             , a static analysis tool that automates the grading of hundreds of
-            submissions every week.
+            student programs every week.
           </Text>
           <VerboseText viewSetting={viewSetting}>
-            nearly every TA spends about 7 hours a week grading student
-            assignments, which are java programs written to a specification.
-            it's imperative in 142 that students get clear, accurate, and
-            actionable feedback on their homework so they know exactly what to
-            improve on in the future, which inadvertently makes grading an
-            arduous task, especially for new TAs.
+            teaching assistants for 142 spend a lot of time hand-grading student
+            submissions every week. the code quality checker's goal is to
+            alleviate the staff workload by automatically creating and parsing
+            the syntax tree corresponding to a student's submission, and
+            automatically posting feedback annotations/assignment scores
+            according to the assignment's criteria.
           </VerboseText>
           <VerboseText viewSetting={viewSetting}>
-            the code quality checker's goal is to alleviate the staff workload
-            by automatically creating and parsing the syntax tree corresponding
-            to a student's submission, and automatically posting feedback
-            annotations/assignment scores according to the assignment's
-            criteria.
-          </VerboseText>
-          <VerboseText viewSetting={viewSetting}>
-            given the private nature of the criteria covered in the project, the
+            given the nature of the criteria covered in the project, the
             repository is private, but i'm happy to answer any questions about
             the project!
           </VerboseText>
-          {/* <Text>
-          i'm also involved with{" "}
-          <Link href="http://uwplse.org/" fontWeight="bold">
-            PLSE
-          </Link>
-          . i do research with the checker framework.
-        </Text> */}
+          <Text>
+            i'm also involved with{" "}
+            <Link href="http://uwplse.org/" fontWeight="bold">
+              PLSE
+            </Link>
+            , the programming language research lab at uw. i assist the team
+            working on the{" "}
+            <Link href="https://checkerframework.org/" fontWeight="bold">
+              checker framework
+            </Link>
+            , a plugin to the java compiler aimed at catching common runtime
+            errors in compilation.
+          </Text>
           <Text>
             outside of work and research, i love making apps to show my friends.
           </Text>
+          <Text>
+            in particular, i made{" "}
+            <Link fontWeight="bold" href="https://ninepasta.me">
+              ninepasta
+            </Link>
+            , a full-stack web app that helps users easily create{" "}
+            <Link
+              fontWeight="bold"
+              href="https://knowyourmeme.com/memes/emojipasta"
+            >
+              emojipastas
+            </Link>
+            .
+          </Text>
+          <VerboseText viewSetting={viewSetting}>
+            this is a web app produced using the MERN stack (with extra help
+            from chakra-ui). users can run crud operations on a no-sql database
+            of word-emoji pairs. users are authenticated using a custom-made
+            login system, and the service is hosted using github pages, heroku,
+            and mongodb atlas.
+          </VerboseText>
+
+          <Text>
+            i'm also very interested in reverse-engineering older hardware.
+          </Text>
+
           <Text>
             in particular, i made{" "}
             <Link
@@ -103,12 +134,16 @@ export const App = () => {
             >
               ninechip
             </Link>
-            , an emulator for the CHIP-8, and{" "}
-            <Link fontWeight="bold" href="https://ninepasta.me">
-              ninepasta
-            </Link>
-            , a full-stack web app for making emojipastas.
+            , an emulator for the CHIP-8 written in java.
           </Text>
+          <VerboseText viewSetting={viewSetting}>
+            emulators are often described as problems that heavily test
+            low-level programming concepts. although this is certainly true,
+            making an emulator also tested my software engineering skills. the
+            nature of the program makes it so that low-level code is present
+            across the codebase, meaning that well-documented, modular code was
+            a necessity.
+          </VerboseText>
           <Text>
             i'm also making{" "}
             <Link
