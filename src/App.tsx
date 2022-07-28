@@ -57,9 +57,9 @@ export const App = () => {
             <Heading as="h1" size="3xl">
               niners!
             </Heading>
-            <Text>student, ta, researcher, and tinkerer!</Text>
+            <Text>i do swe, pl, and cs ed!</Text>
             <HStack justifyContent={["center", "flex-end"]}>
-              <Link href="mailto:acheung8@uw.edu">
+              <Link href="mailto:acheung8@cs.washington.edu">
                 <GrMail size={30} />
               </Link>
               <Link href="https://github.com/ninehusky">
@@ -74,13 +74,6 @@ export const App = () => {
               <ColorModeSwitcher />
             </HStack>
           </Box>
-          <Box mx={["auto", 3]}>
-            <VerboseSwitch
-              viewSetting={viewSetting}
-              onClick={handleViewChange}
-              color={color}
-            />
-          </Box>
         </Box>
         <VStack
           mx={3}
@@ -90,150 +83,78 @@ export const App = () => {
           display="flex"
           alignItems="flex-start"
         >
+          <Text>Hiya! 👋</Text>
           <Text>
-            hi! i'm niners, aka andrew, a fourth-year studying computer science
-            at uw seattle.
-          </Text>
-          <Text>
-            most people know me as the section lead ta for{" "}
-            <Link color={color} fontWeight="bold" href="https://cs.uw.edu/142">
-              CSE 142
-            </Link>
-            , the introductory computer science class at uw.
-          </Text>
-          <VerboseText viewSetting={viewSetting}>
-            as a teaching assistant, a lot of my time goes toward teaching
-            weekly classes of about 20 undergraduates. as a section lead, a
-            large portion of ta duties is also dedicated to planning and
-            presenting weekly debriefs to course staff!
-          </VerboseText>
-          <Text>
-            last summer, i started working with a team of tas on the{" "}
-            <Link color={color} href="#" fontWeight="bold">
-              code quality checker
-            </Link>
-            , a static analysis tool that automates the grading of hundreds of
-            student programs every week.
-          </Text>
-          <VerboseText viewSetting={viewSetting}>
-            teaching assistants for 142 spend ~7 hours a week hand-grading
-            student submissions. the code quality checker's goal is to alleviate
-            staff workload by automatically creating and parsing the syntax tree
-            corresponding to a student's submission, before automatically
-            posting feedback annotations/assignment scores according to an
-            assignment's criteria.
-          </VerboseText>
-          <Text>
-            i'm also involved with{" "}
-            <Link color={color} href="http://uwplse.org/" fontWeight="bold">
-              PLSE
-            </Link>
-            , the programming language research lab at uw.
-          </Text>
-          <Text>
-            i'm currently onboarding with the team working on{" "}
-            <Link
-              color={color}
-              href="https://github.com/gussmith23/glenside/"
-              fontWeight="bold"
-            >
-              glenside
-            </Link>
-            , a programming language designed to optimize performance with
-            machine learning.
-          </Text>
-          <VerboseText viewSetting={viewSetting}>
-            specifically, it's a low-level language implemented in rust whose
-            compiler is designed to perform low-level program rewrites, thereby
-            optimizing performance within the context of machine learning.
-          </VerboseText>
-          <Text>
-            outside of work and research, i love making apps to show my friends.
-          </Text>
-          <Text>
-            in particular, i created{" "}
-            <Link color={color} fontWeight="bold" href="https://ninepasta.me">
-              ninepasta
-            </Link>
-            , a full-stack web app that helps users easily create{" "}
-            <Link
-              color={color}
-              fontWeight="bold"
-              href="https://knowyourmeme.com/memes/emojipasta"
-            >
-              emojipastas
+            I'm Andrew, a fifth-year studying CS at UW Seattle's{" "}
+            <Link color={color} fontWeight="bold" href="https://cs.uw.edu/">
+              Paul G. Allen School of Computer Science and Engineering
             </Link>
             .
           </Text>
-          <VerboseText viewSetting={viewSetting}>
-            this is a web app produced using the MERN stack (with extra help
-            from chakra-ui). users can run crud operations on a no-sql database
-            of word-emoji pairs. users are authenticated using a custom-made
-            login system, and the service is hosted using github pages, heroku,
-            and mongodb atlas.
-          </VerboseText>
-
           <Text>
-            i'm also very interested in reverse-engineering older hardware.
+            I'm currently working at{" "}
+            <Link
+              fontWeight="bold"
+              color={color}
+              href="https://www.amazon.com/"
+            >
+              Amazon
+            </Link>{" "}
+            as a SWE intern.
           </Text>
-
           <Text>
-            earlier this year, i made{" "}
+            When I return to school this fall, I'll be working toward getting my
+            Bachelor's and Master's degrees as part of the Allen School's{" "}
+            <Link
+              color={color}
+              fontWeight="bold"
+              href="https://www.cs.washington.edu/academics/bsms/"
+            >
+              BS/MS program
+            </Link>
+            .
+          </Text>
+          <Text>
+            I'm also a research assistant at UW's{" "}
+            <Link color={color} fontWeight="bold" href="https://uwplse.org/">
+              PLSE lab
+            </Link>{" "}
+            under the mentorship of Dr. Zachary Tatlock and Gus Smith.
+          </Text>{" "}
+          🧪
+          <Text>
+            For several years I was a core member of the teaching staff of{" "}
+            <Link color={color} fontWeight="bold" href="https://cs.uw.edu/142">
+              CSE 142
+            </Link>
+            {", "}the intro CS course at UW.
+          </Text>
+          <Text>
+            Further back, I tutored athletes in Computer Science at the Allen
+            School and did webdev for{" "}
+            <Link color={color} fontWeight="bold" href="https://rainydawg.org/">
+              Rainy Dawg Radio
+            </Link>
+            .
+          </Text>
+          <Text>
+            When I'm not at school, I love making stuff, whether it's{" "}
             <Link
               color={color}
               fontWeight="bold"
               href="https://github.com/ninehusky/ninechip"
             >
-              ninechip
+              programming projects,{" "}
             </Link>
-            , an emulator for the{" "}
+            food, doodles, or{" "}
             <Link
               color={color}
-              fontWeight="bold"
-              href="https://en.wikipedia.org/wiki/CHIP-8"
+              fontWeight={"bold"}
+              href="https://www.youtube.com/watch?v=VmgY0_I1LAs&list=PLxkXYkNGR0iJBZ_K3CIK__PPQK9BjJ1_2"
             >
-              CHIP-8
-            </Link>{" "}
-            written in java.
-          </Text>
-          <VerboseText viewSetting={viewSetting}>
-            i wrote ninechip as a first step into the world of interpreters.
-            ninechip fully emulates the hardware of the CHIP-8, i.e., the ram,
-            cpu, and keypad, and simulates i/o and display using the swing
-            library. it reads and executes any file written in CHIP-8 assembly
-            at 60 hz.
-          </VerboseText>
-          <Text>
-            i'm also making{" "}
-            <Link
-              color={color}
-              fontWeight="bold"
-              href="https://github.com/ninehusky/nine-eighty"
-            >
-              nine-eighty
+              music
             </Link>
-            , a disassembler and interpreter for the intel 8080 assembly
-            language.
-          </Text>
-          <VerboseText viewSetting={viewSetting}>
-            the 8080 is a pretty famous chip, having powered influential
-            machines such as the space invaders arcade cabinet. the level of
-            complexity of the 8080 is significantly higher than the CHIP-8,
-            meaning that more sophisticated unit tests are necessary to ensure
-            that my interpreter is working correctly.
-          </VerboseText>
-          <VerboseText viewSetting={viewSetting}>
-            given the age of the 8080, a lot of my time working on this project
-            is diving deep into the intel 8080 programmer's manual, a job that
-            is equally as frustrating as it is rewarding.
-          </VerboseText>
-          <Text>
-            i'm open to talk about just about anything, whether it relates to
-            computer science or not.{" "}
-            <Link color={color} href="mailto:acheung8@uw.edu" fontWeight="bold">
-              send me an email
-            </Link>
-            !
+            . (Plenty of room to improve with all of those, though!)
           </Text>
         </VStack>
       </Box>
