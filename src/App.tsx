@@ -92,7 +92,7 @@ export const App = () => {
             .
           </Text>
           <Text>
-            I'm currently working at{" "}
+            I spent Summer 2022 working at{" "}
             <Link
               fontWeight="bold"
               color={color}
@@ -103,8 +103,8 @@ export const App = () => {
             as a SWE intern.
           </Text>
           <Text>
-            When I return to school this fall, I'll be working toward getting my
-            Bachelor's and Master's degrees as part of the Allen School's{" "}
+            This fall, I'm working toward getting my Bachelor's and Master's
+            degrees as part of the Allen School's{" "}
             <Link
               color={color}
               fontWeight="bold"
