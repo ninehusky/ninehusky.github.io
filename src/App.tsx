@@ -2,178 +2,151 @@ import * as React from "react";
 import {
   ChakraProvider,
   Box,
-  Heading,
-  Text,
-  extendTheme,
-  ThemeConfig,
-  Link,
   VStack,
-  useColorModeValue,
+  Grid,
+  Heading,
+  Divider,
   HStack,
-  Container,
+  theme,
+  Text,
+  Link,
+  Image,
 } from "@chakra-ui/react";
 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { IoMdDocument } from "react-icons/io";
 
-import { VerboseSwitch } from "./components/VerboseSwitch";
-import { VerboseText } from "./components/VerboseText";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
-// TODO: color provider
-
-export const App = () => {
-  const config: ThemeConfig = {
-    initialColorMode: "dark",
-  };
-
-  // 3. extend the theme
-  const theme = extendTheme({ config });
-  const color = useColorModeValue("blue.300", "#8FCDF4");
-  const [viewSetting, changeViewSetting] = React.useState<
-    "concise" | "verbose"
-  >("concise");
-
-  const handleViewChange = (event: React.FormEvent) => {
-    changeViewSetting(viewSetting === "concise" ? "verbose" : "concise");
-  };
-
-  return (
-    <ChakraProvider theme={theme}>
-      <Box
-        mt={["10vh", "10vh"]}
-        mx={"auto"}
-        mb={"10vh"}
-        maxW="container.md"
-        lineHeight="2"
-      >
-        <Box
-          display={"flex"}
-          flexDirection={["column", "row-reverse"]}
-          justifyContent={["center", "space-between"]}
-        >
-          <Box textAlign={["center", "right"]} mx={["auto", 3]}>
-            <Heading as="h1" size="3xl">
-              niners!
-            </Heading>
-            <Text>i do swe, pl, and cs ed!</Text>
-            <HStack justifyContent={["center", "flex-end"]}>
-              <Link href="mailto:acheung8@cs.washington.edu">
-                <GrMail size={30} />
-              </Link>
-              <Link href="https://github.com/ninehusky">
-                <FaGithub size={30} />
-              </Link>
-              <Link href="https://www.linkedin.com/in/acheung88/">
-                <FaLinkedin size={30} />
-              </Link>
-              <Link href={`http://niners.me/resume.pdf`}>
-                <IoMdDocument size={30} />
-              </Link>
-              <ColorModeSwitcher />
-            </HStack>
-          </Box>
-        </Box>
-        <VStack
-          mx={3}
-          mt={"5vh"}
-          fontSize="lg"
-          spacing={5}
-          display="flex"
-          alignItems="flex-start"
-        >
-          <Text>Hiya! 👋</Text>
-          <Text>
-            I'm Andrew, a fifth-year studying CS at UW Seattle's{" "}
-            <Link color={color} fontWeight="bold" href="https://cs.uw.edu/">
-              Paul G. Allen School of Computer Science and Engineering
-            </Link>
-            .
-          </Text>
-          <Text>
-            I spent Summer 2022 working at{" "}
-            <Link
-              fontWeight="bold"
-              color={color}
-              href="https://www.amazon.com/"
-            >
-              Amazon
-            </Link>{" "}
-            as a SWE intern.
-          </Text>
-          <Text>
-            This fall, I'm working toward getting my Bachelor's and Master's
-            degrees as part of the Allen School's{" "}
-            <Link
-              color={color}
-              fontWeight="bold"
-              href="https://www.cs.washington.edu/academics/bsms/"
-            >
-              BS/MS program
-            </Link>
-            .
-          </Text>
-          <Text>
-            I'm also a research assistant at UW's{" "}
-            <Link color={color} fontWeight="bold" href="https://uwplse.org/">
-              PLSE lab
-            </Link>{" "}
-            under the mentorship of Dr. Zachary Tatlock and Gus Smith.
-          </Text>{" "}
-          🧪
-          <Text>
-            For several years I was a core member of the teaching staff of{" "}
-            <Link color={color} fontWeight="bold" href="https://cs.uw.edu/142">
-              CSE 142
-            </Link>
-            {", "}the intro CS course at UW.
-          </Text>
-          <Text>
-            Further back, I tutored athletes in Computer Science at the Allen
-            School and did webdev for{" "}
-            <Link color={color} fontWeight="bold" href="https://rainydawg.org/">
-              Rainy Dawg Radio
-            </Link>
-            .
-          </Text>
-          <Text>
-            When I'm not at school, I love making stuff, whether it's{" "}
-            <Link
-              color={color}
-              fontWeight="bold"
-              href="https://github.com/ninehusky/ninechip"
-            >
-              programming projects,{" "}
-            </Link>
-            food, doodles, or{" "}
-            <Link
-              color={color}
-              fontWeight={"bold"}
-              href="https://www.youtube.com/watch?v=VmgY0_I1LAs&list=PLxkXYkNGR0iJBZ_K3CIK__PPQK9BjJ1_2"
-            >
-              music
-            </Link>
-            . (Plenty of room to improve with all of those, though!)
-          </Text>
+export const App = () => (
+  <ChakraProvider theme={theme}>
+    <Box textAlign="center" fontSize="xl">
+      <Grid minH="100vh" p={3}>
+        <ColorModeSwitcher justifySelf="flex-end" />
+        <VStack spacing={10}>
+          <Image src="findmii.png" alt="Andrew Cheung" maxWidth="20%" />
+          <HStack justifyContent={"center"} width={"80%"} spacing={10}>
+            <VStack alignItems={"center"}>
+              <Heading fontSize={"6xl"}>Andrew Cheung</Heading>
+              <Heading fontSize={"xl"}>UW Grad Student | PLSE Researcher | CSE 12X TA </Heading>
+              <Box textAlign={["center", "right"]} mx={["auto", 3]}>
+                <HStack justifyContent={["center", "flex-end"]}>
+                  <Link href="mailto:acheung8@cs.washington.edu">
+                    <GrMail size={30} />
+                  </Link>
+                  <Link href="https://github.com/ninehusky">
+                    <FaGithub size={30} />
+                  </Link>
+                  <Link href="https://www.linkedin.com/in/acheung88/">
+                    <FaLinkedin size={30} />
+                  </Link>
+                  <Link href={`resume.pdf`}>
+                    <IoMdDocument size={30} />
+                  </Link>
+                </HStack>
+              </Box>
+            </VStack>
+          </HStack>
+          <Divider orientation="horizontal" />
+          <HStack width={"60%"}>
+            <VStack alignItems={"flex-start"}>
+              <Text textAlign={"left"}>
+                I'm a master's student at the University of Washington studying
+                computer science at the{" "}
+                <Link fontWeight={"bold"} href="https://cs.washington.edu/">
+                  Paul G. Allen School of Computer Science and Engineering
+                </Link>.
+                The goal of my master's degree is to learn more about PL
+                techniques and apply them in novel ways to solve a wide
+                variety of problems!
+              </Text>
+              <Heading fontSize={"4xl"}>Research</Heading>
+              <Text textAlign={"left"}>
+                I currently conduct research at{" "}
+                <Link fontWeight={"bold"} href="https://uwplse.org">UW PLSE</Link>, under the
+                mentorship of{" "}
+                <Link fontWeight={"bold"} href="https://justg.us">Gus Smith</Link> and{" "}
+                <Link fontWeight={"bold"} href="https://ztatlock.com">Zachary Tatlock</Link>.
+              </Text>
+              <Text textAlign={"left"}>
+                Right now, I'm a core member of the team working on Lakeroad, a
+                tool that leverages program synthesis to
+                compile hardware designs to complex programmable units such as DSPs.
+                Lakeroad is able to synthesize designs in a way that is both
+                correct by construction and comparable to proprietary tools.
+              </Text>
+              <Text textAlign={"left"}>
+                In addition to Lakeroad, I also work on 3LA alongside researchers at UW, Princeton, and Harvard.
+                3LA is a tool that aims to make it easier for developers to develop
+                and test accelerators.
+              </Text>
+              <Text textAlign={"left"}>
+                As part of the 3LA project, I helped work on an IR for
+                tensor operations called <Link fontWeight={"bold"} href="https://github.com/gussmith23/glenside">
+                  Glenside
+                </Link>
+                . Specifically, I extended the language's operators so that it could support a wider set of machine learning kernels.
+              </Text>
+              <Heading fontSize={"4xl"}>Teaching</Heading>
+              <Text textAlign={"left"}>
+                I'm currently a lead teaching assistant for CSE 12X (the introductory
+                programming sequence at UW). This winter, I wrapped up my first
+                quarter as a lead TA for{" "}
+                <Link fontWeight={"bold"} href="https://courses.cs.washington.edu/courses/cse122/23wi/">
+                  CSE 122
+                </Link>
+                , and am eager to begin the spring TAing for the next course in
+                the sequence,{" "}
+                <Link fontWeight={"bold"} href="https://courses.cs.washington.edu/courses/cse123/23sp/">
+                  CSE 123
+                </Link>
+                .
+              </Text>
+              <Text textAlign={"left"}>
+                Further back in the past, for several years I also was a lead TA for{" "}
+                <Link fontWeight={"bold"} href="https://courses.cs.washington.edu/courses/cse142">
+                  CSE 142
+                </Link>
+                , the prior iteration of UW's CS1 course.
+              </Text>
+              <Text textAlign={"left"}>
+                While there, I led a team composed of myself and 2 other
+                talented TAs (Kelvin Ng + Sumant Guha) in a push to create the
+                14X autograder, a tool that leverages static analysis techniques
+                to help catch errors in student code. This tool helped catch
+                many errors that would otherwise have gone unnoticed by TAs!
+              </Text>
+              <Text textAlign={"left"}>
+                Even further back in the past, I was a Allen School tutor
+                for student athletes; I worked with a student athlete throughout
+                the quarter to support them in their CS courses.
+              </Text>
+              <Heading fontSize={"4xl"}>Industry</Heading>
+              <Text textAlign={"left"}>
+                Last summer, I had the pleasure of interning at{" "}
+                <Link fontWeight={"bold"} href="https://www.amazon.com">Amazon</Link> as a software
+                development engineer intern. There, I worked on a full-stack web
+                app aimed at improving the experience of Amazon's associates
+                working in fulfillment centers.
+              </Text>
+              <Heading fontSize={"4xl"}>Other</Heading>
+              <Text textAlign={"left"}>
+                In general, when I'm not at school I'm either making something or eating something.
+                Things that I make include{" "}
+                <Link fontWeight={"bold"} href="https://github.com/ninehusky/ninechip">
+                  programming projects
+                </Link>,{" "}
+                <Link fontWeight={"bold"} href="https://www.youtube.com/watch?v=VmgY0_I1LAs&list=PLxkXYkNGR0iJBZ_K3CIK__PPQK9BjJ1_2">
+                  music
+                </Link>,{" "}
+                food, and doodles.
+              </Text>
+            </VStack>
+          </HStack>
         </VStack>
-      </Box>
-      <Container maxW="container.md">
-        <Text textAlign={["center", "right"]} fontSize="md">
-          favicon art by{" "}
-          <Link href="https://twemoji.twitter.com/" fontWeight="bold">
-            twemoji
-          </Link>
-          .
-        </Text>
-        <Text textAlign={["center", "right"]} fontSize="md" mb={4}>
-          proudly made using{" "}
-          <Link href="https://chakra-ui.com/" fontWeight="bold">
-            chakra-ui
-          </Link>
-          .
-        </Text>
-      </Container>
-    </ChakraProvider>
-  );
-};
+      </Grid>
+    </Box >
+  </ChakraProvider >
+);
