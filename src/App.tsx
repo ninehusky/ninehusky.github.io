@@ -17,7 +17,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { IoMdDocument } from "react-icons/io";
 
-
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 export const App = () => (
@@ -30,7 +29,9 @@ export const App = () => (
           <HStack justifyContent={"center"} width={"80%"} spacing={10}>
             <VStack alignItems={"center"}>
               <Heading fontSize={"6xl"}>Andrew Cheung</Heading>
-              <Heading fontSize={"xl"}>UW Grad Student | PLSE Researcher | CSE 12X TA </Heading>
+              <Heading fontSize={"xl"}>
+                UW Grad Student | PLSE Researcher | CSE 12X TA{" "}
+              </Heading>
               <Box textAlign={["center", "right"]} mx={["auto", 3]}>
                 <HStack justifyContent={["center", "flex-end"]}>
                   <Link href="mailto:acheung8@cs.washington.edu">
@@ -57,56 +58,82 @@ export const App = () => (
                 computer science at the{" "}
                 <Link fontWeight={"bold"} href="https://cs.washington.edu/">
                   Paul G. Allen School of Computer Science and Engineering
-                </Link>.
-                The goal of my master's degree is to learn more about PL
-                techniques and apply them in novel ways to solve a wide
-                variety of problems!
+                </Link>
+                . The goal of my master's degree is to use research as a way to
+                learn more about PL techniques and apply them in novel ways!
               </Text>
               <Heading fontSize={"4xl"}>Research</Heading>
               <Text textAlign={"left"}>
                 I currently conduct research at{" "}
-                <Link fontWeight={"bold"} href="https://uwplse.org">UW PLSE</Link>, under the
-                mentorship of{" "}
-                <Link fontWeight={"bold"} href="https://justg.us">Gus Smith</Link> and{" "}
-                <Link fontWeight={"bold"} href="https://ztatlock.com">Zachary Tatlock</Link>.
-              </Text>
-              <Text textAlign={"left"}>
-                Right now, I'm a core member of the team working on Lakeroad, a
-                tool that leverages program synthesis to
-                compile hardware designs to complex programmable units such as DSPs.
-                Lakeroad is able to synthesize designs in a way that is both
-                correct by construction and comparable to proprietary tools.
-              </Text>
-              <Text textAlign={"left"}>
-                In addition to Lakeroad, I also work on 3LA alongside researchers at UW, Princeton, and Harvard.
-                3LA is a tool that aims to make it easier for developers to develop
-                and test accelerators.
-              </Text>
-              <Text textAlign={"left"}>
-                As part of the 3LA project, I helped work on an IR for
-                tensor operations called <Link fontWeight={"bold"} href="https://github.com/gussmith23/glenside">
-                  Glenside
+                <Link fontWeight={"bold"} href="https://uwplse.org">
+                  UW PLSE
                 </Link>
-                . Specifically, I extended the language's operators so that it could support a wider set of machine learning kernels.
-              </Text>
-              <Heading fontSize={"4xl"}>Teaching</Heading>
-              <Text textAlign={"left"}>
-                I'm currently a lead teaching assistant for CSE 12X (the introductory
-                programming sequence at UW). This winter, I wrapped up my first
-                quarter as a lead TA for{" "}
-                <Link fontWeight={"bold"} href="https://courses.cs.washington.edu/courses/cse122/23wi/">
-                  CSE 122
-                </Link>
-                , and am eager to begin the spring TAing for the next course in
-                the sequence,{" "}
-                <Link fontWeight={"bold"} href="https://courses.cs.washington.edu/courses/cse123/23sp/">
-                  CSE 123
+                , under the mentorship of{" "}
+                <Link fontWeight={"bold"} href="https://justg.us">
+                  Gus Smith
+                </Link>{" "}
+                and{" "}
+                <Link fontWeight={"bold"} href="https://ztatlock.com">
+                  Zachary Tatlock
                 </Link>
                 .
               </Text>
               <Text textAlign={"left"}>
-                Further back in the past, for several years I also was a lead TA for{" "}
-                <Link fontWeight={"bold"} href="https://courses.cs.washington.edu/courses/cse142">
+                Right now, I'm a core member of the team working on Lakeroad, a
+                tool that leverages program synthesis to compile hardware
+                designs to complex programmable units such as DSPs. Lakeroad is
+                able to synthesize designs in a way that is both correct by
+                construction and comparable to proprietary tools.
+              </Text>
+              <Text textAlign={"left"}>
+                In addition to Lakeroad, I also work on 3LA alongside
+                researchers at UW, Princeton, and Harvard. 3LA is a tool that
+                aims to make it easier for developers to develop and test
+                accelerators.
+              </Text>
+              <Text textAlign={"left"}>
+                As part of the 3LA project, I helped work on an IR for tensor
+                operations called{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://github.com/gussmith23/glenside"
+                >
+                  Glenside
+                </Link>
+                . Specifically, I extended the language's operators so that it
+                could support a wider set of machine learning kernels.
+              </Text>
+              <Heading fontSize={"4xl"}>Teaching</Heading>
+              <Text textAlign={"left"}>
+                I'm currently a lead teaching assistant for CSE 12X (the
+                introductory programming sequence at UW). Right now, I TA for{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://courses.cs.washington.edu/courses/cse123/23sp/"
+                >
+                  CSE 123
+                </Link>
+                , "Introduction to Computer Programming III". The class focuses
+                on implementation and runtime analysis of data structures and
+                algorithms using advanced programming features such as
+                recursion, linked references, and object-oriented inheritance!
+                This winter, I wrapped up my first quarter as a lead TA for{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://courses.cs.washington.edu/courses/cse122/23wi/"
+                >
+                  CSE 122
+                </Link>
+                , and am eager to begin the spring TAing for the next course in
+                the sequence, .
+              </Text>
+              <Text textAlign={"left"}>
+                Further back in the past, for several years I also was a lead TA
+                for{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://courses.cs.washington.edu/courses/cse142"
+                >
                   CSE 142
                 </Link>
                 , the prior iteration of UW's CS1 course.
@@ -119,34 +146,67 @@ export const App = () => (
                 many errors that would otherwise have gone unnoticed by TAs!
               </Text>
               <Text textAlign={"left"}>
-                Even further back in the past, I was a Allen School tutor
-                for student athletes; I worked with a student athlete throughout
-                the quarter to support them in their CS courses.
+                Even further back in the past, I was a Allen School tutor for
+                student athletes; I worked with a student athlete throughout the
+                quarter to support them in their CS courses.
               </Text>
               <Heading fontSize={"4xl"}>Industry</Heading>
               <Text textAlign={"left"}>
+                This summer, I'll be going to{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://www.intel.com/content/www/us/en/research/overview.html"
+                >
+                  Intel Labs
+                </Link>{" "}
+                as a formal verification research intern. There, I'll be{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://www.intel.com/content/www/us/en/newsroom/news/intel-collaborate-microsoft-darpa-program.html"
+                >
+                  helping the push
+                </Link>{" "}
+                to develop hardware that supports{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://en.wikipedia.org/wiki/Homomorphic_encryption#Fully_homomorphic_encryption"
+                >
+                  fully homomorphic encryption
+                </Link>
+                .
+              </Text>
+              <Text textAlign={"left"}>
                 Last summer, I had the pleasure of interning at{" "}
-                <Link fontWeight={"bold"} href="https://www.amazon.com">Amazon</Link> as a software
-                development engineer intern. There, I worked on a full-stack web
-                app aimed at improving the experience of Amazon's associates
-                working in fulfillment centers.
+                <Link fontWeight={"bold"} href="https://www.amazon.com">
+                  Amazon
+                </Link>{" "}
+                as a software development engineer intern. I designed and
+                implemented a full-stack web app aimed at improving the
+                experience of Amazon employees working in fulfillment centers.
               </Text>
               <Heading fontSize={"4xl"}>Other</Heading>
               <Text textAlign={"left"}>
-                In general, when I'm not at school I'm either making something or eating something.
-                Things that I make include{" "}
-                <Link fontWeight={"bold"} href="https://github.com/ninehusky/ninechip">
+                In general, when I'm not at school I'm either making something
+                or eating something. Things that I make include{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://github.com/ninehusky/ninechip"
+                >
                   programming projects
-                </Link>,{" "}
-                <Link fontWeight={"bold"} href="https://www.youtube.com/watch?v=VmgY0_I1LAs&list=PLxkXYkNGR0iJBZ_K3CIK__PPQK9BjJ1_2">
+                </Link>
+                ,{" "}
+                <Link
+                  fontWeight={"bold"}
+                  href="https://www.youtube.com/watch?v=VmgY0_I1LAs&list=PLxkXYkNGR0iJBZ_K3CIK__PPQK9BjJ1_2"
+                >
                   music
-                </Link>,{" "}
-                food, and doodles.
+                </Link>
+                , food, and doodles.
               </Text>
             </VStack>
           </HStack>
         </VStack>
       </Grid>
-    </Box >
-  </ChakraProvider >
+    </Box>
+  </ChakraProvider>
 );
