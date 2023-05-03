@@ -11,6 +11,9 @@ import {
   Text,
   Link,
   Image,
+  List,
+  ListItem,
+  UnorderedList,
 } from "@chakra-ui/react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -87,7 +90,7 @@ export const App = () => (
               </Text>
               <Text textAlign={"left"}>
                 In addition to Lakeroad, I also work on 3LA alongside
-                researchers at UW, Princeton, and Harvard. 3LA is a tool that
+                researchers at UW, Princeton, and Harvard. 3LA is a methodology that
                 aims to make it easier for developers to develop and test
                 accelerators.
               </Text>
@@ -113,19 +116,17 @@ export const App = () => (
                 >
                   CSE 123
                 </Link>
-                , "Introduction to Computer Programming III". The class focuses
-                on implementation and runtime analysis of data structures and
-                algorithms using advanced programming features such as
-                recursion, linked references, and object-oriented inheritance!
-                This winter, I wrapped up my first quarter as a lead TA for{" "}
+                , taught by{" "}
+                <Link fontWeight={"bold"} href="https://homes.cs.washington.edu/~brettwo/">Brett Wortzman</Link>.
+                Last quarter, I wrapped up my first quarter as a lead TA for{" "}
                 <Link
                   fontWeight={"bold"}
                   href="https://courses.cs.washington.edu/courses/cse122/23wi/"
                 >
                   CSE 122
                 </Link>
-                , and am eager to begin the spring TAing for the next course in
-                the sequence, .
+                , taught by{" "}
+                <Link fontWeight={"bold"} href="https://www.linkedin.com/in/miya-natsuhara-72861a94/">Miya Natsuhara</Link>.
               </Text>
               <Text textAlign={"left"}>
                 Further back in the past, for several years I also was a lead TA
@@ -140,7 +141,9 @@ export const App = () => (
               </Text>
               <Text textAlign={"left"}>
                 While there, I led a team composed of myself and 2 other
-                talented TAs (Kelvin Ng + Sumant Guha) in a push to create the
+                talented TAs (
+                <Link fontWeight={"bold"} href="https://www.linkedin.com/in/ng-kelvin/">Kelvin Ng</Link> +{" "}
+                <Link fontWeight={"bold"} href="https://sumantguha.github.io/">Sumant Guha</Link>) in a push to create the
                 14X autograder, a tool that leverages static analysis techniques
                 to help catch errors in student code. This tool helped catch
                 many errors that would otherwise have gone unnoticed by TAs!
@@ -160,13 +163,14 @@ export const App = () => (
                   Intel Labs
                 </Link>{" "}
                 as a formal verification research intern. There, I'll be{" "}
+                working with <Link fontWeight={"bold"} href="https://www.linkedin.com/in/jin-yang-87a9587b/">Jin Yang</Link>'s team to{" "}
                 <Link
                   fontWeight={"bold"}
                   href="https://www.intel.com/content/www/us/en/newsroom/news/intel-collaborate-microsoft-darpa-program.html"
                 >
-                  helping the push
+                  help the push
                 </Link>{" "}
-                to develop hardware that supports{" "}
+                in developing hardware that supports{" "}
                 <Link
                   fontWeight={"bold"}
                   href="https://en.wikipedia.org/wiki/Homomorphic_encryption#Fully_homomorphic_encryption"
@@ -180,7 +184,14 @@ export const App = () => (
                 <Link fontWeight={"bold"} href="https://www.amazon.com">
                   Amazon
                 </Link>{" "}
-                as a software development engineer intern. I designed and
+                as a software development engineer intern. Alongside{" "}
+                <Link fontWeight={"bold"} href="https://www.linkedin.com/in/antonni/">
+                  Anton Nikitin
+                </Link>{" "}(my manager) and{" "}
+                <Link fontWeight={"bold"} href="https://www.linkedin.com/in/yiweilu/">
+                  Yi-Wei Lu
+                </Link>{" "}(my mentor),{" "}
+                I designed and
                 implemented a full-stack web app aimed at improving the
                 experience of Amazon employees working in fulfillment centers.
               </Text>
@@ -201,7 +212,28 @@ export const App = () => (
                 >
                   music
                 </Link>
-                , food, and doodles.
+                , and food.
+              </Text>
+              <Text align={"left"}>
+                I also really enjoy drawing. Some famous pieces of mine include:
+                <UnorderedList>
+                  <ListItem>
+                    <Link fontWeight={"bold"} href="sasha.png">a portrait</Link> of{" "}
+                    <Link fontWeight={"bold"} href="https://turtleshell.me/">Sasha</Link>{" (MS Paint, 2020)"}
+                  </ListItem>
+                  <ListItem>
+                    <Link fontWeight={"bold"} href="nami.jpg">this picture</Link> of Nami (Notability, 2022)
+                  </ListItem>
+                  <ListItem>
+                    <Link fontWeight={"bold"} href="dog.png">a dog</Link> I drew for one of my friends (likely May) (Notability, 2021)
+                  </ListItem>
+                  <ListItem>
+                    <Link fontWeight={"bold"} href="evangelion.jpeg">Shinji</Link> from Evangelion (MS Paint, 2020)
+                  </ListItem>
+                  <ListItem>
+                    <Link fontWeight={"bold"} href="guinea.png">A guinea pig</Link> (Notability, 2021)
+                  </ListItem>
+                </UnorderedList>
               </Text>
             </VStack>
           </HStack>
