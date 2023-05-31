@@ -11,7 +11,6 @@ import {
   Text,
   Link,
   Image,
-  List,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
@@ -33,7 +32,8 @@ export const App = () => (
             <VStack alignItems={"center"}>
               <Heading fontSize={"6xl"}>Andrew Cheung</Heading>
               <Heading fontSize={"xl"}>
-                UW Grad Student | PLSE Researcher | CSE 12X TA{" "}
+                Grad Student @ UW | Researcher @ PLSE | Coordinator/TA @ CSE 12X
+                {/* UW Grad Student | PLSE Researcher | CSE 12X Coordinator/TA{" "} */}
               </Heading>
               <Box textAlign={["center", "right"]} mx={["auto", 3]}>
                 <HStack justifyContent={["center", "flex-end"]}>
@@ -108,7 +108,12 @@ export const App = () => (
               </Text>
               <Heading fontSize={"4xl"}>Teaching</Heading>
               <Text textAlign={"left"}>
-                I'm currently a lead teaching assistant for CSE 12X (the
+                I'm currently onboarding as the CSE 12X TA Coordinator! I'll be
+                regularly working with the intro instructors and my co-coordinator
+                to make sure that 12X runs smoothly.
+              </Text>
+              <Text textAlign={"left"}>
+                I'm a lead teaching assistant for CSE 12X (the
                 introductory programming sequence at UW). Right now, I TA for{" "}
                 <Link
                   fontWeight={"bold"}
