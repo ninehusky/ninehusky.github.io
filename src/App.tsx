@@ -76,7 +76,7 @@ export const App = () => (
                   Gus Smith
                 </Link>{" "}
                 and{" "}
-                <Link fontWeight={"bold"} href="https://ztatlock.com">
+                <Link fontWeight={"bold"} href="https://ztatlock.net">
                   Zachary Tatlock
                 </Link>
                 .
