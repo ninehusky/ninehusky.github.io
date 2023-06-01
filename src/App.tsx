@@ -109,7 +109,11 @@ export const App = () => (
               <Heading fontSize={"4xl"}>Teaching</Heading>
               <Text textAlign={"left"}>
                 I'm currently onboarding as the CSE 12X TA Coordinator! I'll be
-                regularly working with the intro instructors and my co-coordinator
+                regularly working with the intro instructors and{" "}
+                <Link fontWeight={"bold"} href="https://www.linkedin.com/in/chloe-fong/">
+                  Chloe Fong
+                </Link>,{" "}
+                my co-coordinator
                 to make sure that 12X runs smoothly.
               </Text>
               <Text textAlign={"left"}>
