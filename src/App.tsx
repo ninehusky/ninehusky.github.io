@@ -30,7 +30,7 @@ export const App = () => (
           <Image src="findmii.png" alt="Andrew Cheung" maxWidth="20%" />
           <HStack justifyContent={"center"} width={"80%"} spacing={10}>
             <VStack alignItems={"center"}>
-              <Heading fontSize={"6xl"}>Andrew Cheung</Heading>
+              <Heading fontSize={"6xl"}>Andrew Cheung (he/him)</Heading>
               <Heading fontSize={"xl"}>
                 Grad Student @ UW | Researcher @ PLSE | Coordinator/TA @ CSE 12X
                 {/* UW Grad Student | PLSE Researcher | CSE 12X Coordinator/TA{" "} */}
@@ -67,11 +67,11 @@ export const App = () => (
               </Text>
               <Heading fontSize={"4xl"}>Research</Heading>
               <Text textAlign={"left"}>
-                I currently conduct research at{" "}
+                I'm very lucky to say that I currently help research at{" "}
                 <Link fontWeight={"bold"} href="https://uwplse.org">
                   UW PLSE
-                </Link>
-                , under the mentorship of{" "}
+                </Link>{" "}
+                with the mentorship of{" "}
                 <Link fontWeight={"bold"} href="https://justg.us">
                   Gus Smith
                 </Link>{" "}
@@ -82,14 +82,27 @@ export const App = () => (
                 .
               </Text>
               <Text textAlign={"left"}>
-                Right now, I'm a core member of the team working on Lakeroad, a
+                Right now, I'm a core member of the team working on
+                <Link fontWeight={"bold"} href="https://github.com/uwsampl/lakeroad">{" "}Lakeroad</Link>, a
                 tool that leverages program synthesis to compile hardware
                 designs to complex programmable units such as DSPs. Lakeroad is
                 able to synthesize designs in a way that is both correct by
                 construction and comparable to proprietary tools.
+                We presented{" "}
+                <Link fontWeight={"bold"} href="https://arxiv.org/pdf/2305.09580.pdf">part of our work</Link>{" "}
+                at <Link fontWeight={"bold"} href="https://pldi23.sigplan.org/home/plarch-2023#program">PLARCH 2023</Link>!
               </Text>
               <Text textAlign={"left"}>
-                In addition to Lakeroad, I also work on 3LA alongside
+                As part of Lakeroad, I conducted a survey of the current state of{" "}
+                hardware compilers. To do this, I created a tool called{" "}
+                Cookie. Cookie and its findings were accepted to the{" "}
+                <Link fontWeight={"bold"} href="https://icfp23.sigplan.org/track/icfp-2023-student-research-competition">ICFP Student
+                  Research Competition</Link> this year!{" "}
+                Read the paper <Link fontWeight={"bold"} href="cookie-paper.pdf">here</Link>.
+
+              </Text>
+              <Text textAlign={"left"}>
+                In addition to Lakeroad, I also worked on 3LA alongside
                 researchers at UW, Princeton, and Harvard. 3LA is a methodology that
                 aims to make it easier for developers to develop and test
                 accelerators.
@@ -108,17 +121,20 @@ export const App = () => (
               </Text>
               <Heading fontSize={"4xl"}>Teaching</Heading>
               <Text textAlign={"left"}>
-                I'm currently onboarding as the CSE 12X TA Coordinator! I'll be
+                I'm currently onboarding as the CSE 12X TA Coordinator! 12X refers to{" "}
+                CSE 121, 122, and 123, <Link fontWeight="bold" href="https://www.cs.washington.edu/academics/ugrad/nonmajor-options/intro-courses">the introductory programming sequence</Link> at UW.
+                I'll be
                 regularly working with the intro instructors and{" "}
                 <Link fontWeight={"bold"} href="https://www.linkedin.com/in/chloe-fong/">
                   Chloe Fong
                 </Link>,{" "}
                 my co-coordinator
-                to make sure that 12X runs smoothly.
+                to make sure that 12X runs smoothly. This role generally entails running
+                administrative tasks, such as interviewing, hiring, and training new TAs.{" "}
+                <Link fontWeight={"bold"} href="thefriends.jpeg">Here</Link>'s a picture of me and the very hardworking 12X TAs in Spring 2023 (I'm in the middle)!
               </Text>
               <Text textAlign={"left"}>
-                I'm a lead teaching assistant for CSE 12X (the
-                introductory programming sequence at UW). Right now, I TA for{" "}
+                Alongside my position as coordinator, I'm also a lead teaching assistant for CSE 12X. In the spring, I TAed for{" "}
                 <Link
                   fontWeight={"bold"}
                   href="https://courses.cs.washington.edu/courses/cse123/23sp/"
@@ -127,7 +143,7 @@ export const App = () => (
                 </Link>
                 , taught by{" "}
                 <Link fontWeight={"bold"} href="https://homes.cs.washington.edu/~brettwo/">Brett Wortzman</Link>.
-                Last quarter, I wrapped up my first quarter as a lead TA for{" "}
+                In the winter, I wrapped up my first quarter as a lead TA for{" "}
                 <Link
                   fontWeight={"bold"}
                   href="https://courses.cs.washington.edu/courses/cse122/23wi/"
@@ -158,6 +174,13 @@ export const App = () => (
                 many errors that would otherwise have gone unnoticed by TAs!
               </Text>
               <Text textAlign={"left"}>
+                I'm currently trying to do something similar for 12X. The name for the project is{" "}
+                <Link fontWeight={"bold"} href="https://github.com/ninehusky/cornbear">Cornbear</Link>, or the Concepts OR Non-Concepts Based Experimental Automated Reasoner.{" "}
+                (It is lovingly named after <Link fontWeight="bold" href="https://gradeit.cs.washington.edu/public/img/gradeit_logo_1.png">the mascot</Link>{" "}
+                for UW's intro sequence!).
+
+              </Text>
+              <Text textAlign={"left"}>
                 Even further back in the past, I was a Allen School tutor for
                 student athletes; I worked with a student athlete throughout the
                 quarter to support them in their CS courses.
@@ -179,7 +202,7 @@ export const App = () => (
                 >
                   help the push
                 </Link>{" "}
-                in developing hardware that supports{" "}
+                in verifiying hardware that supports{" "}
                 <Link
                   fontWeight={"bold"}
                   href="https://en.wikipedia.org/wiki/Homomorphic_encryption#Fully_homomorphic_encryption"
@@ -227,20 +250,47 @@ export const App = () => (
                 I also really enjoy drawing. Some famous pieces of mine include:
                 <UnorderedList>
                   <ListItem>
-                    <Link fontWeight={"bold"} href="sasha.png">a portrait</Link> of{" "}
-                    <Link fontWeight={"bold"} href="https://turtleshell.me/">Sasha</Link>{" (MS Paint, 2020)"}
+                    <Link fontWeight={"bold"} href="cakepop.jpg">an interpretation of the Starbucks bee cake pop</Link> (MS Paint, 2023)
+                  </ListItem>
+                  <ListItem>
+                    a compilation of Lord of the Rings characters (work in progress - MS Paint, 2023):
+                    <UnorderedList>
+                      <ListItem>
+                        <Link fontWeight={"bold"} href="aragorn-angry.png">
+                          Aragorn
+                        </Link>
+                      </ListItem>
+                      <ListItem>
+                        <Link fontWeight={"bold"} href="aragorn-dvd.png">
+                          Aragorn Lite
+                        </Link>{" "}
+
+                      </ListItem>
+                      <ListItem>
+                        <Link fontWeight={"bold"} href="frodo.png">
+                          Frodo
+                        </Link>
+                      </ListItem>
+                    </UnorderedList>
                   </ListItem>
                   <ListItem>
                     <Link fontWeight={"bold"} href="nami.jpg">this picture</Link> of Nami (Notability, 2022)
                   </ListItem>
                   <ListItem>
+                    <Link fontWeight={"bold"} href="scoobers.png">The Scooby Squad</Link>{" "}(MS Paint, 2021)
+                  </ListItem>
+                  <ListItem>
                     <Link fontWeight={"bold"} href="dog.png">a dog</Link> I drew for one of my friends (likely May) (Notability, 2021)
                   </ListItem>
                   <ListItem>
-                    <Link fontWeight={"bold"} href="evangelion.jpeg">Shinji</Link> from Evangelion (MS Paint, 2020)
+                    <Link fontWeight={"bold"} href="guinea.png">A guinea pig</Link> (Notability, 2021)
                   </ListItem>
                   <ListItem>
-                    <Link fontWeight={"bold"} href="guinea.png">A guinea pig</Link> (Notability, 2021)
+                    <Link fontWeight={"bold"} href="sasha.png">a portrait</Link> of{" "}
+                    <Link fontWeight={"bold"} href="https://turtleshell.me/">Sasha</Link>{" (MS Paint, 2020)"}
+                  </ListItem>
+                  <ListItem>
+                    <Link fontWeight={"bold"} href="evangelion.jpeg">Shinji</Link> from Evangelion (MS Paint, 2020)
                   </ListItem>
                 </UnorderedList>
               </Text>
@@ -248,6 +298,6 @@ export const App = () => (
           </HStack>
         </VStack>
       </Grid>
-    </Box>
-  </ChakraProvider>
+    </Box >
+  </ChakraProvider >
 );
