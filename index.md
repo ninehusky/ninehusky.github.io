@@ -7,6 +7,8 @@ layout: home
 <!-- import css -->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+<link rel="icon" href="./favicon.png" type="image/x-icon">
+
 <!-- profile picture -->
 
 <img src="./assets/photos/findmii.png">
@@ -27,15 +29,17 @@ Next year, I'll be starting my PhD. I don't know where yet, but I'm excited to s
 
 # Research
 
+**I work on tools that make it easier for hardware designers to create correct, efficient designs.**
+
 I've spent the past two years collaborating with a team of researchers in PLSE
-on [Lakeroad](https://https://github.com/uwsampl/lakeroad), a hardware
+on [Lakeroad](https://github.com/uwsampl/lakeroad), a hardware
 compilation tool that uses program synthesis to generate hardware designs. We presented the basis for this work
 [(link)](https://arxiv.org/abs/2305.09580) at PLARCH 2023, and our main paper [(link)](https://arxiv.org/abs/2401.16526)
 will appear at ASPLOS 2024.
 
 As part of my work on Lakeroad, I created Cookie
 [(extended abstract)](https://ninehusky.github.io/cookie-paper.pdf), a tool which rigorously
-evaluates FPGA compilation tools based on their ability to fully reason about the primitives they target.
+evaluates FPGA compilation tools based on their ability to efficiently map designs to DSPs.
 I presented this work at ICFP 2023
 [(talk](https://www.youtube.com/live/bjJU1vP1vVI?si=-3PuswxQ-ODEIMgr&t=28448) |
 [poster)](./assets/09-05-2023-cookie-poster.pdf),
@@ -46,29 +50,31 @@ which improves Lakeroad's ability to give correct-by-construction guarantees
 about the hardware it generates. I gave a talk on this work to my group [(slides)](./assets/02-14-2024-gator-talk.pdf),
 and am excited to see where it goes!
 
-Before Lakeroad, I worked on 3LA, a project in collaboration with researchers at Princeton and Harvard to
+Before Lakeroad, I worked on 3LA, a project in collaboration with researchers at UW, Princeton, and Harvard to
 make it easier for developers to perform end-to-end evaluations of their accelerators. Our work was accepted
 to TODAES 2023 [(link)](https://arxiv.org/abs/2203.00218).
 
 # Teaching
 
-I'm very lucky to have had the opportunity to teach at UW. Currently, I'm the TA Coordinator for
-CSE 12x, the undergraduate intro sequence.Generally, this involves managing over 100 TAs and interviewing, hiring, and training
+**I love teaching, and have been doing it since my first year of undergrad.**
+
+I'm the TA Coordinator for
+CSE 12x, which is UW's introductory programming sequence. In general, this involves leading over 100 TAs and interviewing, hiring, and training
 our quarterly cohort of new TAs. [Here's](./assets/photos/thefriends.jpeg)
 a picture of us from last year (I'm in the middle wearing the turtleneck)!
 
-I wouldn't be able to do this without the support of [Chloe Fong](https://www.linkedin.com/in/chloe-fong/),
+I wouldn't be able to do this without the support of the unstoppable [Chloe Fong](https://www.linkedin.com/in/chloe-fong/),
 my co-coordinator! Recently, we were interviewed for a documentary by Northeastern University's [Center for Inclusive Computing](https://cic.northeastern.edu/)
-which highlights the world-class TA program that I'm lucky to be a part of!
+which highlights the world-class TA program that I'm lucky to be a part of.
 
-Before I was the TA Coordinator, I was a Lead TA for CSE 122 and CSE 123, two courses in the intro sequence. Before that, for 10
+Before I was a TA Coordinator, I was a Lead TA for CSE 122 and CSE 123, two courses in the intro sequence. Before that, for 10
 quarters I was a Lead TA for CSE 142, the first course in the old intro sequence. While there, I created Cornbear, a
 static analysis tool that helps TAs grade their code. Cornbear was actually my introduction to programming languages research!
 This project still goes on strong today, led by the fearless and
 brilliant
 [Owen Boseley](https://www.linkedin.com/in/nullthemoment/).
 
-Before I ever taught in a classroom, I was a Allen School tutor for student athletes;
+Before I ever taught in a classroom, I was an Allen School tutor for student athletes;
 I worked with a student athlete throughout the quarter to support them in their CS courses.
 
 # Industry
