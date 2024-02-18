@@ -22,7 +22,7 @@ I'm a master's student at the University of Washington studying Programming Lang
 at the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/). I'm a member of the
 [Programming Languages and Software Engineering (PLSE)](https://uwplse.org) group, where I work in the
 intersection of PL and Computer Architecture. Under the mentorship of
-[Zachary Tatlock](https://homes.cs.washington.edu/~ztatlock/) and [Gus Smith](https://homes.cs.washington.edu/~gjsmith/),
+[Zachary Tatlock](https://ztatlock.net) and [Gus Smith](https://justg.us/),
 we're making tools to make it easier for hardware designers to compile their designs to FPGAs.
 
 Next year, I'll be starting my PhD. I don't know where yet, but I'm excited to see where I end up!
