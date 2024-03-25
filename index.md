@@ -25,7 +25,16 @@ intersection of PL and Computer Architecture. Under the mentorship of
 [Zachary Tatlock](https://ztatlock.net) and [Gus Smith](https://justg.us/),
 we're making tools to make it easier for hardware designers to compile their designs to FPGAs.
 
-Next year, I'll be starting my PhD. I don't know where yet, but I'm excited to see where I end up!
+Next year, I'll be starting my PhD at UC San Diego, where I'll be working in the [Programming Systems](https://cseweb.ucsd.edu/groups/progsys/) group.
+I'm excited to move to UCSD for many reasons, but
+one of the biggest is that I'll be closer to my older brother, who lives in LA.
+
+# News
+
+- **03/22/2024**: We have a position paper accepted to LATTE 2024! The paper's advocating for the use of equality saturation in hardware design. This general topic
+  will be what I'll be immediately working on when I start my PhD.
+- **03/21/2024**: I'm excited to announce that I'll be starting my PhD at UC San Diego next year! I'm looking forward to working with Nadia Polikarpova and Sorin Lerner in the Programming Systems group.
+- **03/14/2024**: I retired from my role as TA Coordinator for the intro sequence at UW. I'm leaving the position in the hands of the extremely talented [Chloe](https://www.linkedin.com/in/chloe-fong/) and [Parker](https://www.linkedin.com/in/parker-gustafson/)!
 
 # Research
 
