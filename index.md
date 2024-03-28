@@ -32,10 +32,12 @@ one of the biggest is that I'll be closer to my older brother, who lives in LA.
 
 # News
 
+- **03/27/2024**: What a month! I'm very excited to announce that I'll be heading to [Synopsys](https://www.synopsys.com/) this summer to explore equality saturation in the context of hardware tooling. Many thanks to [Sudipta Kundu](https://mesl.ucsd.edu/sudipta/index.html) and [Ashish Kapoor](https://www.linkedin.com/in/ashish-kapoor-5a6632/) for the opportunity!
 - **03/22/2024**: We have a position paper accepted to LATTE 2024! The paper's advocating for the use of equality saturation in hardware design. This general topic
   will be what I'll be immediately working on when I start my PhD.
 - **03/21/2024**: I'm excited to announce that I'll be starting my PhD at UC San Diego next year! I'm looking forward to working with Nadia Polikarpova and Sorin Lerner in the Programming Systems group.
 - **03/14/2024**: I retired from my role as TA Coordinator for the intro sequence at UW. I'm leaving the position in the hands of the extremely talented [Chloe](https://www.linkedin.com/in/chloe-fong/) and [Parker](https://www.linkedin.com/in/parker-gustafson/)!
+- (before March 2024, I didn't really have a news section, but I'm excited to start one!)
 
 # Research
 
