@@ -11,10 +11,11 @@ layout: home
 
 <!-- profile picture -->
 
-<img src="./assets/photos/findmii.png">
-
 <!-- h1 with id of title -->
 <h1 id="title">Andrew Cheung (he/him)</h1>
+<img src="./assets/photos/cruiseandfamily.png">
+<center>(photo: me with two of my biggest inspirations -- my mom and my grandma!)</center>
+<br />
 
 Hey!
 
