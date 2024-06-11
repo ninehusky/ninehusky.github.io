@@ -13,10 +13,13 @@ layout: home
 
 <!-- h1 with id of title -->
 <h1 id="title">Andrew Cheung <a href="https://en.pronouns.page/he">(he/him)</a></h1>
-<img alt="Me with two of my biggest inspirations -- my mom and my grandma!" src="./assets/photos/cruiseandfamily.png">
+<img alt="Andrew, his mom, and his grandma" src="./assets/photos/cruiseandfamily.png">
+<center>
+photo: me with two of my biggest inspirations -- my mom and my grandma!
+</center>
 <br />
 
-I'm Andrew, an incoming PhD student at UC San Diego's [CSE department](https://cse.ucsd.edu/).
+Hi! I'm Andrew, an incoming PhD student at UC San Diego's [CSE department](https://cse.ucsd.edu/).
 I'll be working in the [Programming Systems](https://cseweb.ucsd.edu/groups/progsys/) group!
 
 Before UCSD, I got my master's and bachelor's at the University of Washington's
