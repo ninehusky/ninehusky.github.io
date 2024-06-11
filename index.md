@@ -12,107 +12,78 @@ layout: home
 <!-- profile picture -->
 
 <!-- h1 with id of title -->
-<h1 id="title">Andrew Cheung (he/him)</h1>
-<img src="./assets/photos/cruiseandfamily.png">
-<center>(photo: me with two of my biggest inspirations -- my mom and my grandma!)</center>
+<h1 id="title">Andrew Cheung <a href="https://en.pronouns.page/he">(he/him)</a></h1>
+<img alt="Me with two of my biggest inspirations -- my mom and my grandma!" src="./assets/photos/cruiseandfamily.png">
 <br />
 
-Hey!
+I'm Andrew, an incoming PhD student at UC San Diego's [CSE department](https://cse.ucsd.edu/).
+I'll be working in the [Programming Systems](https://cseweb.ucsd.edu/groups/progsys/) group!
 
-I'm a master's student at the University of Washington studying Programming Languages
-at the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/). I'm a member of the
-[Programming Languages and Software Engineering (PLSE)](https://uwplse.org) group, where I work in the
-intersection of PL and Computer Architecture. Under the mentorship of
-[Zachary Tatlock](https://ztatlock.net) and [Gus Smith](https://justg.us/),
-we're making tools to make it easier for hardware designers to compile their designs to FPGAs.
+Before UCSD, I got my master's and bachelor's at the University of Washington's
+[Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/).
+I was advised by
+[Zachary Tatlock](https://ztatlock.net) and mentored by
+[Gus Smith](https://justg.us/)
+in the [PLSE](https://uwplse.org/) lab!
 
-Next year, I'll be starting my PhD at UC San Diego, where I'll be working in the [Programming Systems](https://cseweb.ucsd.edu/groups/progsys/) group.
-I'm excited to move to UCSD for many reasons, but
-one of the biggest is that I'll be closer to my older brother, who lives in LA.
-
-# News
-
-- **03/27/2024**: What a month! I'm very excited to announce that I'll be heading to [Synopsys](https://www.synopsys.com/) this summer to explore equality saturation in the context of hardware tooling. Many thanks to [Sudipta Kundu](https://mesl.ucsd.edu/sudipta/index.html) and [Ashish Kapoor](https://www.linkedin.com/in/ashish-kapoor-5a6632/) for the opportunity!
-- **03/22/2024**: We have a position paper accepted to LATTE 2024! The paper's advocating for the use of equality saturation in hardware design. This general topic
-  will be what I'll be immediately working on when I start my PhD.
-- **03/21/2024**: I'm excited to announce that I'll be starting my PhD at UC San Diego next year! I'm looking forward to working with Nadia Polikarpova and Sorin Lerner in the Programming Systems group.
-- **03/14/2024**: I retired from my role as TA Coordinator for the intro sequence at UW. I'm leaving the position in the hands of the extremely talented [Chloe](https://www.linkedin.com/in/chloe-fong/) and [Parker](https://www.linkedin.com/in/parker-gustafson/)!
-- (before March 2024, I didn't really have a news section, but I'm excited to start one!)
+_Are you a UCSD undergrad/master's student interested in research? Let's chat -- I don't bite!_
 
 # Research
 
-**I work on tools that make it easier for hardware designers to create correct, efficient designs.**
+**In general, my research motivation is to make it easier to write tricky code[^1].**
 
-I've spent the past two years collaborating with a team of researchers in PLSE
-on [Lakeroad](https://github.com/uwsampl/lakeroad), a hardware
-compilation tool that uses program synthesis to generate hardware designs. We presented the basis for this work
-[(link)](https://arxiv.org/abs/2305.09580) at PLARCH 2023, and our main paper [(link)](https://arxiv.org/abs/2401.16526)
-will appear at ASPLOS 2024.
+Right now, I'm at [Synopsys](https://www.synopsys.com/), where I'm exploring
+this goal in the context of hardware design. Specifically, I'm looking at
+how to use [equality saturation](https://docs.rs/egg/latest/egg/tutorials/_01_background/index.html) to make maintaining hardware tools easier.
 
-As part of my work on Lakeroad, I created Cookie
-[(extended abstract)](https://ninehusky.github.io/cookie-paper.pdf), a tool which rigorously
-evaluates FPGA compilation tools based on their ability to efficiently map designs to DSPs.
-I presented this work at ICFP 2023
-[(talk](https://www.youtube.com/live/bjJU1vP1vVI?si=-3PuswxQ-ODEIMgr&t=28448) |
-[poster)](./assets/09-05-2023-cookie-poster.pdf),
-and was awarded first place in the graduate division of the Student Research Competition.
+At UW, I worked with Zach, Gus, and many others on projects which worked
+toward the same goal. Here are some of them:
 
-Currently, for my master's thesis, I'm working on Gator [(link)](https://github.com/ninehusky/gator),
-which improves Lakeroad's ability to give correct-by-construction guarantees
-about the hardware it generates. I gave a talk on this work to my group [(slides)](./assets/02-14-2024-gator-talk.pdf),
-and am excited to see where it goes!
+[^1]: I stole this line from my old advisor, [Zachary Tatlock](https://ztatlock.net).
 
-Before Lakeroad, I worked on 3LA, a project in collaboration with researchers at UW, Princeton, and Harvard to
-make it easier for developers to perform end-to-end evaluations of their accelerators. Our work was accepted
-to TODAES 2023 [(link)](https://arxiv.org/abs/2203.00218).
+- [Lakeroad](https://github.com/uwsampl/lakeroad) ([ASPLOS 2024](https://arxiv.org/abs/2401.16526)) is a hardware compilation tool which
+  uses program synthesis to compile high-level hardware snippets to
+  FPGA primitives.
 
-# Teaching
+- [Cookie](./assets/cookie-paper.pdf)
+  ([ICFP 2023](https://www.youtube.com/live/bjJU1vP1vVI?si=-3PuswxQ-ODEIMgr&t=28448))
+  is an evaluation framework
+  which rigorously tests FPGA compilation tools on their ability to
+  technology map their designs. This won first place at ICFP's Student Research Competition!
 
-**I love teaching, and have been doing it since my first year of undergrad.**
+- [Gator](https://github.com/ninehusky/gator) was my master's thesis project.
+  It was a Lakeroad offshoot which aimed to use solvers to create
+  _correct-by-construction_ hardware compilers.
+  I gave a talk on this work [here](./assets/02-14-2024-gator-talk.pdf).
+  I don't think I actually got it to work, but I learned a lot about program synthesis!
 
-I'm the TA Coordinator for
-CSE 12x, which is UW's introductory programming sequence. In general, this involves leading over 100 TAs and interviewing, hiring, and training
-our quarterly cohort of new TAs. [Here's](./assets/photos/thefriends.jpeg)
-a picture of us from last year (I'm in the middle wearing the turtleneck)!
+- [3LA](https://arxiv.org/abs/2203.00218) ([TODAES 2023](https://arxiv.org/abs/2203.00218))
+  is a project which makes it easier for developers
+  to perform end-to-end evaluations of their accelerators.
 
-I wouldn't be able to do this without the support of the unstoppable [Chloe Fong](https://www.linkedin.com/in/chloe-fong/),
-my co-coordinator! Recently, we were interviewed for a documentary by Northeastern University's [Center for Inclusive Computing](https://cic.northeastern.edu/)
-which highlights the world-class TA program that I'm lucky to be a part of.
+Alongside these projects, I also interned at Intel Labs in 2023, where
+I used formal verification tools to verify the correctness
+of part of an accelerator.
 
-Before I was a TA Coordinator, I was a Lead TA for CSE 122 and CSE 123, two courses in the intro sequence. Before that, for 10
-quarters I was a Lead TA for CSE 142, the first course in the old intro sequence. While there, I created Cornbear, a
-static analysis tool that helps TAs grade their code. Cornbear was actually my introduction to programming languages research!
-This project still goes on strong today, led by the fearless and
-brilliant
-[Owen Boseley](https://www.linkedin.com/in/nullthemoment/).
+# Other Stuff
 
-Before I ever taught in a classroom, I was an Allen School tutor for student athletes;
-I worked with a student athlete throughout the quarter to support them in their CS courses.
+In addition to research, I have a strong passion for teaching and CS education.
+Back at UW, I was with the TA program for the intro sequence for 5 years!
+One of my favorite jobs was being the TA Coordinator for the intro sequence,
+where I led over 100 TAs and interviewed, hired, and trained our quarterly cohort of new TAs
+alongside the amazing [Chloe Fong](https://www.linkedin.com/in/chloe-fong/).
 
-# Industry
+Some highlights:
 
-I spent the latter half of 2023 as a Formal Verification Research Intern at [Intel Labs](https://www.intel.com/content/www/us/en/research/overview.html)
-working with [Jin Yang](https://www.linkedin.com/in/jin-yang-87a9587b/) and [Jeremy Casas](https://www.linkedin.com/in/jeremy-casas-aa70177/) on a project
-responding to
-[DARPA's aims to develop an accelerator](https://www.intel.com/content/www/us/en/newsroom/news/intel-collaborate-microsoft-darpa-program.html#gs.4l37sk)
-for [fully homomorphic encryption](https://en.wikipedia.org/wiki/Homomorphic_encryption#Fully_homomorphic_encryption).
-There, I used industry-grade formal verification tools to verify sections of hardware designs.
+- [Here's](./assets/photos/thefriends.jpeg) a picture of us from Spring 2023 (I'm in the middle wearing the turtleneck)!
 
-In the summer of 2022, I was a Software Development Intern at [Amazon](https://www.amazon.com/), where I worked with
-[Anton Nikitin](https://www.linkedin.com/in/antonni/) and [Yi-Wei Lu](https://www.linkedin.com/in/yiweilu/) on full-stack development
-of software to help train employees working at Amazon's fulfillment centers.
+- [Here's](https://www.youtube.com/watch?v=4BVsKkF2FUE) a documentary by Northeastern University's Center for Inclusive Computing that highlights the world-class TA program that I'm very lucky to have been a part of.
 
-# Personal
+When I'm not teaching or doing research, I like to
+improve my mediocre abilities as an amateur chef, programmer, and artist.
+Recently, I've discovered a love for running and lifting heavy things.
 
-When I'm not at school or work, I love making things -- whether that's cooking,
-[programming](https://github.com/ninehusky/ninechip),
-or [making music](https://www.youtube.com/watch?v=VmgY0_I1LAs&list=PLxkXYkNGR0iJBZ_K3CIK__PPQK9BjJ1_2).
+I also enjoy playing Dota, which is kind
+of like lifting four really heavy things at once.
 
-Perhaps unsurprisingly given my field, I love playing video games. I'm currently nurturing a long-dormant love of
-Starcraft II, and am sitting proudly at the top of Diamond 3.
-Other games I like include League of Legends (I play Annie because I can't aim), Team Fortress 2,
-and any Metroid game ever.
-
-I also like to learn languages. Outside of English, I speak Cantonese (I grew up reading/speaking it, and can still communicate at a 3rd grade level),
-Mandarin (really poorly lol), and Spanish. I also can read some Japanese/Korean/Russian, but
-generally I have no idea what I'm saying.
+<br />

@@ -10,3 +10,8 @@ img {
 #title {
     text-align: center;
 }
+
+a {
+    /* bold */
+    font-weight: bold;
+}
