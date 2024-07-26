@@ -7,6 +7,9 @@ Here are some updates on what I've been up to lately!
 In general, I think I put too many exclamations in these updates, but I'm just
 an exclamatory person.
 
+- **07/26/2024**: Today, I visited UW (where I went for undergrad) and led their weekly
+  progress meeting! Thanks for having me, everyone. It was great to see the old stomping grounds. 👢
+
 - **06/11/2024**: Summer's over! First day at Synopsys! If you're there and want to chat about
   egraphs, solvers, or hardware design, let's grab coffee!
 
