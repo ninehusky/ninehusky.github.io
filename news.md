@@ -10,6 +10,9 @@ an exclamatory person.
 - **07/26/2024**: Today, I visited UW (where I went for undergrad) and led their weekly
   progress meeting! Thanks for having me, everyone. It was great to see the old stomping grounds. 👢
 
+- **07/01/2024**: My [blog post](https://uwplse.org/2024/07/01/gator-in-synthesis-verification.html)
+  about Gator is up on the PLSE blog! Special thanks to [Elliott](https://www.linkedin.com/in/elliott-zackrone-757556233/) for the edits.
+
 - **06/11/2024**: Summer's over! First day at Synopsys! If you're there and want to chat about
   egraphs, solvers, or hardware design, let's grab coffee!
 

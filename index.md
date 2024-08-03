@@ -29,6 +29,8 @@ I was advised by
 [Gus Smith](https://justg.us/)
 in the [PLSE](https://uwplse.org/) lab!
 
+Contact me: `(at a7cheung (dot ucsd edu))`.
+
 _Are you a UCSD undergrad/master's student interested in research? Let's chat -- I don't bite!_
 
 # Research
