@@ -24,14 +24,22 @@ description: >- # this means to ignore newlines until "baseurl:"
   Andrew Cheung's personal website
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-github_username: ninehusky
 markdown: kramdown
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+author:
+  name: Andrew Cheung
+  email: "a7cheung@ucsd.edu"
+
+minima:
+  social_links:
+    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
+    - { platform: linkedin, user_url: "https://linkedin.com/in/acheung88" }
+    - { platform: bluesky, user_url: "https://bsky.app/profile/ancheung.bsky.social" }
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -5,7 +5,7 @@ layout: home
 ---
 
 <!-- import css -->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/custom-style.css">
 
 <link rel="icon" href="./favicon.png" type="image/x-icon">
 
@@ -19,17 +19,10 @@ photo: me with two of my biggest inspirations -- my mom and my grandma!
 </center>
 <br />
 
-Hi! I'm Andrew, an incoming PhD student at UC San Diego's [CSE department](https://cse.ucsd.edu/).
-I'll be working in the [Programming Systems](https://cseweb.ucsd.edu/groups/progsys/) group!
+Hi! I'm Andrew, a first-year PhD student at [UCSD CSE](https://cse.ucsd.edu/).
+I work in the [Programming Systems](https://cseweb.ucsd.edu/groups/progsys/) group!
 
-Before UCSD, I got my master's and bachelor's at the University of Washington's
-[Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/).
-I was advised by
-[Zachary Tatlock](https://ztatlock.net) and mentored by
-[Gus Smith](https://justg.us/)
-in the [PLSE](https://uwplse.org/) lab!
-
-Contact me: `(at a7cheung (dot ucsd edu))`.
+Contact me: `a7cheung@ucsd.edu`
 
 _Are you a UCSD undergrad/master's student interested in research? Let's chat -- I don't bite!_
 
@@ -37,43 +30,38 @@ _Are you a UCSD undergrad/master's student interested in research? Let's chat --
 
 **In general, my research motivation is to make it easier to write tricky code[^1].**
 
-Right now, I'm at [Synopsys](https://www.synopsys.com/), where I'm exploring
-this goal in the context of hardware design. Specifically, I'm looking at
-how to use [equality saturation](https://docs.rs/egg/latest/egg/tutorials/_01_background/index.html) to make maintaining hardware tools easier.
+Right now, I'm working on [Chompy](https://github.com/ninehusky/chompy), a tool which
+uses equality saturation to automatically find conditional rulesets (i.e., rewrite rules
+which only apply under certain conditions, such as `if x != 0 then x / x = 1`).
 
-At UW, I worked with Zach, Gus, and many others on projects which worked
-toward the same goal. Here are some of them:
+Before UCSD, I was at the University of Washington, where I worked on projects aiming
+to make it easier for developers to work with hardware. One of these projects was
+[Lakeroad](https://github.com/uwsampl/lakeroad) ([ASPLOS 2024](https://arxiv.org/abs/2401.16526)),
+a hardware compilation tool which uses program synthesis to automatically compile
+designs to FPGA primitives.
 
 [^1]: I stole this line from my old advisor, [Zachary Tatlock](https://ztatlock.net).
 
-- [Lakeroad](https://github.com/uwsampl/lakeroad) ([ASPLOS 2024](https://arxiv.org/abs/2401.16526)) is a hardware compilation tool which
-  uses program synthesis to compile high-level hardware snippets to
-  FPGA primitives.
+# Industry
 
-- [Cookie](./assets/cookie-paper.pdf)
-  ([ICFP 2023](https://www.youtube.com/live/bjJU1vP1vVI?si=-3PuswxQ-ODEIMgr&t=28448))
-  is an evaluation framework
-  which rigorously tests FPGA compilation tools on their ability to
-  technology map their designs. This won first place at ICFP's Student Research Competition!
+I try to use my research to solve "real-world problems", and I find that industry
+is a great place to see what problems are out there! I've been fortunate to work with some amazing
+people at some amazing companies.
 
-- [Gator](https://github.com/ninehusky/gator) was my master's thesis project.
-  It was a Lakeroad offshoot which aimed to use solvers to create
-  _correct-by-construction_ hardware compilers.
-  I gave a talk on this work [here](./assets/02-14-2024-gator-talk.pdf).
-  I don't think I actually got it to work, but I learned a lot about program synthesis!
+This past summer, I worked with Sudipta Kundu at [Synopsys](https://www.synopsys.com/), where I explored
+how to use [equality saturation](https://docs.rs/egg/latest/egg/tutorials/_01_background/index.html)
+to optimize hardware designs.
 
-- [3LA](https://arxiv.org/abs/2203.00218) ([TODAES 2023](https://arxiv.org/abs/2203.00218))
-  is a project which makes it easier for developers
-  to perform end-to-end evaluations of their accelerators.
+Before that, I interned for Jin Yang at [Intel Labs](https://www.intel.com/content/www/us/en/research/overview.html),
+where I used industry-grade formal verification tools to check the correctness of part of an accelerator.
 
-Alongside these projects, I also interned at Intel Labs in 2023, where
-I used formal verification tools to verify the correctness
-of part of an accelerator.
 
 # Other Stuff
 
-In addition to research, I have a strong passion for teaching and CS education.
-Back at UW, I was with the TA program for the intro sequence for 5 years!
+In addition to research, I have a strong passion for teaching. Few things are
+as rewarding as making CS education a more inclusive, approachable, and fun experience for everyone.
+Before I started my PhD, at UW I was with the TA program for the intro sequence for 5 years!
+
 One of my favorite jobs was being the TA Coordinator for the intro sequence,
 where I led over 100 TAs and interviewed, hired, and trained our quarterly cohort of new TAs
 alongside the amazing [Chloe Fong](https://www.linkedin.com/in/chloe-fong/).
@@ -90,5 +78,12 @@ Recently, I've discovered a love for running and lifting heavy things.
 
 I also enjoy playing Dota, which is kind
 of like lifting four really heavy things at once.
+
+These days, I'm:
+- Reading: _Dune_ by Frank Herbert
+- Listening: _Pretty Girls Like Trap Music_ by 2 Chainz
+- Playing: _Mass Effect_ and _Starcraft II_
+- Watching: _Spy x Family_
+- Drawing: lots of Pokemon and the [Drawabox](https://drawabox.com/) curriculum
 
 <br />
