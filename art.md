@@ -12,6 +12,13 @@ time into seriously learning how to draw. However, I still love to doodle
 and sketch, and here are some prolific examples of my clearly untapped talent:
 </span>
 
+### A scene from Chants of Sennaar (MS Paint, 2025)
+
+![A warrior being mean to a devottee, with a message written in funky symbols](./assets/art/sennaar.png)
+
+My friend June sat me down and we played the demo of this game together.
+Critics received this piece well. Dr. Gus Smith says: "I really love the worm guys".
+
 ### My impression of my friend [Elliott](https://www.linkedin.com/in/elliott-zackrone-757556233/)'s math work (Snapchat, 2024)
 
 ![Elliott's math work involving various integrals and spooky signs](./assets/art/elliott-math.png)
