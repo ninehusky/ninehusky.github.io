@@ -13,13 +13,10 @@ layout: home
 
 <!-- h1 with id of title -->
 <h1 id="title">Andrew Cheung <a href="https://en.pronouns.page/he">(he/him)</a></h1>
-<img alt="Andrew, his mom, and his grandma" src="./assets/photos/cruiseandfamily.png">
-<center>
-photo: me with two of my biggest inspirations -- my mom and my grandma!
-</center>
+<img alt="Andrew" src="./assets/photos/andrew.jpg" />
 <br />
 
-Hi! I'm Andrew, a first-year PhD student at [UCSD CSE](https://cse.ucsd.edu/).
+Hi! I'm Andrew, a second-year PhD student at [UCSD CSE](https://cse.ucsd.edu/).
 I work in the [Programming Systems](https://cseweb.ucsd.edu/groups/progsys/) group!
 
 Contact me: `a7cheung@ucsd.edu`
@@ -30,9 +27,15 @@ _Are you a UCSD undergrad/master's student interested in research? Let's chat --
 
 **In general, my research motivation is to make it easier to write tricky code[^1].**
 
-Right now, I'm working on [Chompy](https://github.com/ninehusky/chompy), a tool which
-uses equality saturation to automatically find conditional rulesets (i.e., rewrite rules
-which only apply under certain conditions, such as `if x != 0 then x / x = 1`).
+Right now my main focus is on FluxOpt, a project which uses [Flux](https://flux-rs.github.io/flux/) to
+  help embedded systems developers debloat their binaries by
+  optimizing away provably-unused code.
+
+Some other projects I've worked on:
+- [Chompy](https://github.com/ninehusky/chompy) is a tool which uses equality saturation to automatically find conditional rulesets
+  (i.e., rewrite rules which only apply under certain conditions, such as `if x != 0 then x / x = 1`).
+- SmartLearningHub is a project which helps introductory programming students learn alongside an
+  AI tutor.
 
 Before UCSD, I was at the University of Washington, where I worked on projects aiming
 to make it easier for developers to work with hardware. One of these projects was
@@ -55,12 +58,12 @@ to optimize hardware designs.
 Before that, I interned for Jin Yang at [Intel Labs](https://www.intel.com/content/www/us/en/research/overview.html),
 where I used industry-grade formal verification tools to check the correctness of part of an accelerator.
 
-
 # Other Stuff
 
 In addition to research, I have a strong passion for teaching. Few things are
 as rewarding as making CS education a more inclusive, approachable, and fun experience for everyone.
-Before I started my PhD, at UW I was with the TA program for the intro sequence for 5 years!
+Before I started my PhD, at UW I was with the TA program for the intro sequence for 5 years, and
+it's something I'm continuing to do here at UCSD!
 
 One of my favorite jobs was being the TA Coordinator for the intro sequence,
 where I led over 100 TAs and interviewed, hired, and trained our quarterly cohort of new TAs
@@ -81,9 +84,9 @@ of like lifting four really heavy things at once.
 
 These days, I'm:
 - Reading: _Dune_ by Frank Herbert
-- Listening: _Pretty Girls Like Trap Music_ by 2 Chainz
-- Playing: _Mass Effect_ and _Starcraft II_
-- Watching: _Spy x Family_
-- Drawing: lots of Pokemon and the [Drawabox](https://drawabox.com/) curriculum
+- Listening: _Fancy That_ by PinkPantheress
+- Playing: a bad amount of _Dota_
+- Watching: _Kill Bill_ for the millionth time
+- Drawing: lots of cats on the whiteboard
 
 <br />
